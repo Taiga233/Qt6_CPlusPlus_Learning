@@ -1,0 +1,4 @@
+C:/Users/Administrator/Documents/VScode repository/Qt6_CPlusPlus_Learning/My_Source_Code/chapter_02_GUIBasics/samp_2-5_CMakeGUI-VisualStudio/build/CMakeFiles/sample2_4.dir
+C:/Users/Administrator/Documents/VScode repository/Qt6_CPlusPlus_Learning/My_Source_Code/chapter_02_GUIBasics/samp_2-5_CMakeGUI-VisualStudio/build/CMakeFiles/INSTALL.dir
+C:/Users/Administrator/Documents/VScode repository/Qt6_CPlusPlus_Learning/My_Source_Code/chapter_02_GUIBasics/samp_2-5_CMakeGUI-VisualStudio/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Administrator/Documents/VScode repository/Qt6_CPlusPlus_Learning/My_Source_Code/chapter_02_GUIBasics/samp_2-5_CMakeGUI-VisualStudio/build/CMakeFiles/ZERO_CHECK.dir

@@ -1,0 +1,36 @@
+{
+	"BUILD_DIR" : "C:/Users/Administrator/Documents/VScode repository/Qt6_CPlusPlus_Learning/My_Source_Code/chapter_02_GUIBasics/samp_2-5_CMakeGUI-VisualStudio/build/sample2_4_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Users/Administrator/Documents/VScode repository/Qt6_CPlusPlus_Learning/My_Source_Code/chapter_02_GUIBasics/samp_2-5_CMakeGUI-VisualStudio/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/Administrator/Documents/VScode repository/Qt6_CPlusPlus_Learning/My_Source_Code/chapter_02_GUIBasics/samp_2-5_CMakeGUI-VisualStudio/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/Administrator/Documents/VScode repository/Qt6_CPlusPlus_Learning/My_Source_Code/chapter_02_GUIBasics/samp_2-5_CMakeGUI-VisualStudio/source",
+	"CMAKE_SOURCE_DIR" : "C:/Users/Administrator/Documents/VScode repository/Qt6_CPlusPlus_Learning/My_Source_Code/chapter_02_GUIBasics/samp_2-5_CMakeGUI-VisualStudio/source",
+	"INCLUDE_DIR" : "C:/Users/Administrator/Documents/VScode repository/Qt6_CPlusPlus_Learning/My_Source_Code/chapter_02_GUIBasics/samp_2-5_CMakeGUI-VisualStudio/build/sample2_4_autogen/include",
+	"INCLUDE_DIR_Debug" : "C:/Users/Administrator/Documents/VScode repository/Qt6_CPlusPlus_Learning/My_Source_Code/chapter_02_GUIBasics/samp_2-5_CMakeGUI-VisualStudio/build/sample2_4_autogen/include_Debug",
+	"INCLUDE_DIR_MinSizeRel" : "C:/Users/Administrator/Documents/VScode repository/Qt6_CPlusPlus_Learning/My_Source_Code/chapter_02_GUIBasics/samp_2-5_CMakeGUI-VisualStudio/build/sample2_4_autogen/include_MinSizeRel",
+	"INCLUDE_DIR_RelWithDebInfo" : "C:/Users/Administrator/Documents/VScode repository/Qt6_CPlusPlus_Learning/My_Source_Code/chapter_02_GUIBasics/samp_2-5_CMakeGUI-VisualStudio/build/sample2_4_autogen/include_RelWithDebInfo",
+	"INCLUDE_DIR_Release" : "C:/Users/Administrator/Documents/VScode repository/Qt6_CPlusPlus_Learning/My_Source_Code/chapter_02_GUIBasics/samp_2-5_CMakeGUI-VisualStudio/build/sample2_4_autogen/include_Release",
+	"INPUTS" : 
+	[
+		"C:/Users/Administrator/Documents/VScode repository/Qt6_CPlusPlus_Learning/My_Source_Code/chapter_02_GUIBasics/samp_2-5_CMakeGUI-VisualStudio/source/editor.ico",
+		"C:/Users/Administrator/Documents/VScode repository/Qt6_CPlusPlus_Learning/My_Source_Code/chapter_02_GUIBasics/samp_2-5_CMakeGUI-VisualStudio/source/images/212.bmp",
+		"C:/Users/Administrator/Documents/VScode repository/Qt6_CPlusPlus_Learning/My_Source_Code/chapter_02_GUIBasics/samp_2-5_CMakeGUI-VisualStudio/source/images/132.bmp",
+		"C:/Users/Administrator/Documents/VScode repository/Qt6_CPlusPlus_Learning/My_Source_Code/chapter_02_GUIBasics/samp_2-5_CMakeGUI-VisualStudio/source/images/324.bmp",
+		"C:/Users/Administrator/Documents/VScode repository/Qt6_CPlusPlus_Learning/My_Source_Code/chapter_02_GUIBasics/samp_2-5_CMakeGUI-VisualStudio/source/images/editor.ico",
+		"C:/Users/Administrator/Documents/VScode repository/Qt6_CPlusPlus_Learning/My_Source_Code/chapter_02_GUIBasics/samp_2-5_CMakeGUI-VisualStudio/source/images/120.bmp",
+		"C:/Users/Administrator/Documents/VScode repository/Qt6_CPlusPlus_Learning/My_Source_Code/chapter_02_GUIBasics/samp_2-5_CMakeGUI-VisualStudio/source/images/322.bmp"
+	],
+	"LOCK_FILE" : "C:/Users/Administrator/Documents/VScode repository/Qt6_CPlusPlus_Learning/My_Source_Code/chapter_02_GUIBasics/samp_2-5_CMakeGUI-VisualStudio/build/CMakeFiles/sample2_4_autogen.dir/AutoRcc_res_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : true,
+	"OPTIONS" : [ "-name", "res" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_res.cpp",
+	"RCC_EXECUTABLE" : "D:/Qt/program/6.5.0/msvc2019_64/./bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "C:/Users/Administrator/Documents/VScode repository/Qt6_CPlusPlus_Learning/My_Source_Code/chapter_02_GUIBasics/samp_2-5_CMakeGUI-VisualStudio/build/CMakeFiles/sample2_4_autogen.dir/AutoRcc_res_EWIEGA46WW_Used.txt",
+	"SETTINGS_FILE_Debug" : "C:/Users/Administrator/Documents/VScode repository/Qt6_CPlusPlus_Learning/My_Source_Code/chapter_02_GUIBasics/samp_2-5_CMakeGUI-VisualStudio/build/CMakeFiles/sample2_4_autogen.dir/AutoRcc_res_EWIEGA46WW_Used_Debug.txt",
+	"SETTINGS_FILE_MinSizeRel" : "C:/Users/Administrator/Documents/VScode repository/Qt6_CPlusPlus_Learning/My_Source_Code/chapter_02_GUIBasics/samp_2-5_CMakeGUI-VisualStudio/build/CMakeFiles/sample2_4_autogen.dir/AutoRcc_res_EWIEGA46WW_Used_MinSizeRel.txt",
+	"SETTINGS_FILE_RelWithDebInfo" : "C:/Users/Administrator/Documents/VScode repository/Qt6_CPlusPlus_Learning/My_Source_Code/chapter_02_GUIBasics/samp_2-5_CMakeGUI-VisualStudio/build/CMakeFiles/sample2_4_autogen.dir/AutoRcc_res_EWIEGA46WW_Used_RelWithDebInfo.txt",
+	"SETTINGS_FILE_Release" : "C:/Users/Administrator/Documents/VScode repository/Qt6_CPlusPlus_Learning/My_Source_Code/chapter_02_GUIBasics/samp_2-5_CMakeGUI-VisualStudio/build/CMakeFiles/sample2_4_autogen.dir/AutoRcc_res_EWIEGA46WW_Used_Release.txt",
+	"SOURCE" : "C:/Users/Administrator/Documents/VScode repository/Qt6_CPlusPlus_Learning/My_Source_Code/chapter_02_GUIBasics/samp_2-5_CMakeGUI-VisualStudio/source/res.qrc",
+	"VERBOSITY" : 0
+}

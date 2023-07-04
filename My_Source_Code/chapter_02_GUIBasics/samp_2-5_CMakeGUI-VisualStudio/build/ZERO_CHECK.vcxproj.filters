@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Administrator\Documents\VScode repository\Qt6_CPlusPlus_Learning\My_Source_Code\chapter_02_GUIBasics\samp_2-5_CMakeGUI-VisualStudio\build\CMakeFiles\05b43247843edc11e6a612a227762b5a\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{46C9A49E-6503-3C76-906F-018F69788023}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

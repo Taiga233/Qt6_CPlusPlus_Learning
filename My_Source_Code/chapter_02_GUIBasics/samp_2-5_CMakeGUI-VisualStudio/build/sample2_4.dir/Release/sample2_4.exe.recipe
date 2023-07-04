@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\Users\Administrator\Documents\VScode repository\Qt6_CPlusPlus_Learning\My_Source_Code\chapter_02_GUIBasics\samp_2-5_CMakeGUI-VisualStudio\build\x64\Release\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\Administrator\Documents\VScode repository\Qt6_CPlusPlus_Learning\My_Source_Code\chapter_02_GUIBasics\samp_2-5_CMakeGUI-VisualStudio\build\Release\sample2_4.exe</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>
