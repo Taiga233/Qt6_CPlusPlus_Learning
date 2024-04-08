@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TestTreeWidget</class>
+ <widget class="QMainWindow" name="TestTreeWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>859</width>
+    <height>441</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Consolas</family>
+    <pointsize>16</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>TestTreeWidget</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>491</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>489</width>
+       <height>299</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label_pictureExhibition">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>859</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QDockWidget" name="dockWidget">
+   <property name="minimumSize">
+    <size>
+     <width>280</width>
+     <height>320</height>
+    </size>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::LeftDockWidgetArea|Qt::RightDockWidgetArea</set>
+   </property>
+   <property name="windowTitle">
+    <string>目录树</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QTreeWidget" name="treeWidget">
+       <attribute name="headerMinimumSectionSize">
+        <number>21</number>
+       </attribute>
+       <attribute name="headerDefaultSectionSize">
+        <number>110</number>
+       </attribute>
+       <column>
+        <property name="text">
+         <string notr="true">节点</string>
+        </property>
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="textAlignment">
+         <set>AlignCenter</set>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>节点类型</string>
+        </property>
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+       </column>
+       <item>
+        <property name="text">
+         <string>图片文件</string>
+        </property>
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string>分组节点</string>
+         </property>
+         <property name="font">
+          <font>
+           <family>Consolas</family>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <item>
+          <property name="text">
+           <string>图片节点</string>
+          </property>
+          <property name="font">
+           <font>
+            <family>Consolas</family>
+            <pointsize>16</pointsize>
+           </font>
+          </property>
+         </item>
+        </item>
+        <item>
+         <property name="text">
+          <string>分组2</string>
+         </property>
+         <property name="font">
+          <font>
+           <family>Consolas</family>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+        </item>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actTool_AddFolder"/>
+   <addaction name="actTool_AddFile"/>
+   <addaction name="actTool_DeleteItem"/>
+   <addaction name="actTool_ScanItems"/>
+   <addaction name="separator"/>
+   <addaction name="actZoom_In"/>
+   <addaction name="actZoom_Out"/>
+   <addaction name="actZoom_RealSize"/>
+   <addaction name="actZoom_FitWidth"/>
+   <addaction name="actZoom_FitHeight"/>
+   <addaction name="separator"/>
+   <addaction name="actDock_Float"/>
+   <addaction name="actDock_Visible"/>
+   <addaction name="separator"/>
+   <addaction name="actTool_Quit"/>
+  </widget>
+  <action name="actTool_AddFolder">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/open3.bmp</normaloff>:/icons/open3.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>添加目录...</string>
+   </property>
+   <property name="toolTip">
+    <string>添加图片的目录</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="actTool_AddFile">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/824.bmp</normaloff>:/icons/824.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>添加文件...</string>
+   </property>
+   <property name="toolTip">
+    <string>添加图片文件用于显示</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actTool_DeleteItem">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/delete1.bmp</normaloff>:/icons/delete1.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>删除节点</string>
+   </property>
+   <property name="toolTip">
+    <string>从TreeWidget中删除一个节点</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="actTool_Quit">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/exit.bmp</normaloff>:/icons/exit.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+   <property name="toolTip">
+    <string>退出程序</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+W</string>
+   </property>
+  </action>
+  <action name="actTool_ScanItems">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/fold.bmp</normaloff>:/icons/fold.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>遍历节点</string>
+   </property>
+   <property name="toolTip">
+    <string>扫描节点</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actZoom_In">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/418.bmp</normaloff>:/icons/418.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>放大</string>
+   </property>
+   <property name="toolTip">
+    <string>放大图片</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+=</string>
+   </property>
+  </action>
+  <action name="actZoom_Out">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/416.bmp</normaloff>:/icons/416.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>缩小</string>
+   </property>
+   <property name="toolTip">
+    <string>缩小图片</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+-</string>
+   </property>
+  </action>
+  <action name="actZoom_RealSize">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/414.bmp</normaloff>:/icons/414.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>实际大小</string>
+   </property>
+   <property name="toolTip">
+    <string>将图片缩放为实际大小</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+0</string>
+   </property>
+  </action>
+  <action name="actZoom_FitWidth">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/424.bmp</normaloff>:/icons/424.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>合适宽度</string>
+   </property>
+   <property name="toolTip">
+    <string>将图片按照合适宽度缩放</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Shift+W</string>
+   </property>
+  </action>
+  <action name="actZoom_FitHeight">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/422.bmp</normaloff>:/icons/422.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>合适高度</string>
+   </property>
+   <property name="toolTip">
+    <string>将图片按照合适高度缩放</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Shift+H</string>
+   </property>
+  </action>
+  <action name="actDock_Visible">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/BEBULB_16.ICO</normaloff>:/icons/BEBULB_16.ICO</iconset>
+   </property>
+   <property name="text">
+    <string>窗口可见</string>
+   </property>
+   <property name="toolTip">
+    <string>停靠窗口是否可见</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actDock_Float">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/814.bmp</normaloff>:/icons/814.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>窗口浮动</string>
+   </property>
+   <property name="toolTip">
+    <string>停靠窗口是否可浮动</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actTool_Quit</sender>
+   <signal>triggered()</signal>
+   <receiver>TestTreeWidget</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>429</x>
+     <y>220</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dockWidget</sender>
+   <signal>topLevelChanged(bool)</signal>
+   <receiver>actDock_Float</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>141</x>
+     <y>251</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dockWidget</sender>
+   <signal>visibilityChanged(bool)</signal>
+   <receiver>actDock_Visible</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>141</x>
+     <y>251</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

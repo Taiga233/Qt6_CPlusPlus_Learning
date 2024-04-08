@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TestComboBox</class>
+ <widget class="QWidget" name="TestComboBox">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>730</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Consolas</family>
+    <pointsize>16</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>TestComboBox</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_4">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QGroupBox" name="groupBox_01Simple">
+       <property name="title">
+        <string>Simple ComboBox</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QPushButton" name="pushButton_01InitList">
+            <property name="text">
+             <string>Initalization</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_02ClearList">
+            <property name="text">
+             <string>Clear List</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QCheckBox" name="checkBox">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>Editable</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_01Simple">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <item>
+             <property name="text">
+              <string>Beijing</string>
+             </property>
+             <property name="icon">
+              <iconset resource="res.qrc">
+               <normaloff>:/icons/UNIT.ICO</normaloff>:/icons/UNIT.ICO</iconset>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Shanghai</string>
+             </property>
+             <property name="icon">
+              <iconset resource="res.qrc">
+               <normaloff>:/icons/UNIT.ICO</normaloff>:/icons/UNIT.ICO</iconset>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupBox_02Data">
+       <property name="title">
+        <string>ComboBox with user data</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QPushButton" name="pushButton_02InitCity">
+          <property name="text">
+           <string>Initalize City&amp;&amp;Number</string>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBox_02Data">
+          <property name="placeholderText">
+           <string>Please choose one city!</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_03Info">
+     <property name="title">
+      <string>Infomation Showing</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPushButton" name="pushButton_03ClearText">
+        <property name="text">
+         <string>Clear PlainTextEdit</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPlainTextEdit" name="plainTextEdit"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>comboBox_01Simple</sender>
+   <signal>currentTextChanged(QString)</signal>
+   <receiver>plainTextEdit</receiver>
+   <slot>appendPlainText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>266</x>
+     <y>77</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>290</x>
+     <y>222</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_03ClearText</sender>
+   <signal>clicked()</signal>
+   <receiver>plainTextEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>440</x>
+     <y>153</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>440</x>
+     <y>211</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_02ClearList</sender>
+   <signal>clicked()</signal>
+   <receiver>comboBox_01Simple</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>384</x>
+     <y>56</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>384</x>
+     <y>80</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_02Data</sender>
+   <signal>currentTextChanged(QString)</signal>
+   <receiver>plainTextEdit</receiver>
+   <slot>appendPlainText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>543</x>
+     <y>81</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>559</x>
+     <y>220</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

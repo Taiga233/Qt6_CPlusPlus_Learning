@@ -1,3 +1,6 @@
-My_Source_Code/chapter_*/samp_*/sample*/*.txt.user
-My_Source_Code/chapter_*/samp_*/build-*
+My_Source_Code/chapter_*/sample_*/sample*/*.txt.user
+My_Source_Code/chapter_*/sample_*/Test*/*.pro.user
+My_Source_Code/chapter_*/sample_*/Test*/*.txt.user
+My_Source_Code/chapter_*/sample_*/*ignored
+My_Source_Code/chapter_*/sample_*/build-*
 .vscode

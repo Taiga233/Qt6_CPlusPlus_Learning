@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>res/306.bmp</file>
+        <file>res/428.bmp</file>
+        <file>res/500.bmp</file>
+        <file>res/502.bmp</file>
+        <file>res/508.bmp</file>
+        <file>res/510.bmp</file>
+        <file>res/512.bmp</file>
+        <file>res/append.bmp</file>
+        <file>res/clean.bmp</file>
+        <file>res/delete.bmp</file>
+        <file>res/edit_16.ico</file>
+        <file>res/exit.bmp</file>
+        <file>res/export1.bmp</file>
+        <file>res/import1.bmp</file>
+        <file>res/insert.bmp</file>
+        <file>res/open.bmp</file>
+        <file>res/remove.bmp</file>
+        <file>res/save.bmp</file>
+    </qresource>
+    <qresource prefix="/data">
+        <file>res/JingXie.txt</file>
+    </qresource>
+</RCC>

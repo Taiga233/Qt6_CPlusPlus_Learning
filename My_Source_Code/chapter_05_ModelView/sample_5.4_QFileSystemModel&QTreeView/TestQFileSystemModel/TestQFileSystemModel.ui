@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TestQFileSystemModel</class>
+ <widget class="QMainWindow" name="TestQFileSystemModel">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>970</width>
+    <height>612</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Source Code Pro</family>
+    <pointsize>14</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>TestQFileSystemModel</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <item>
+     <widget class="QSplitter" name="Sh_01horizontal">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QGroupBox" name="GB_01treeView">
+       <property name="title">
+        <string>treeView</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <layout class="QVBoxLayout" name="Lv_01utility">
+          <item>
+           <layout class="QHBoxLayout" name="Lh_02displayType">
+            <item>
+             <widget class="QRadioButton" name="RB_01showAll">
+              <property name="text">
+               <string>显示目录和文件</string>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="RB_02showDirOnly">
+              <property name="text">
+               <string>只显示目录</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="HS_01">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="GB_05filter">
+            <property name="title">
+             <string/>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <widget class="QCheckBox" name="CB_01fileFilter">
+               <property name="text">
+                <string>文件名过滤</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="CBB_01chooseType">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <item>
+                <property name="text">
+                 <string>*.h;*.cpp;*.ui</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>*.h;*.cpp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>*.jpg</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>*.txt</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="TB_01quickApply">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="text">
+                <string>应用</string>
+               </property>
+               <property name="icon">
+                <iconset resource="res.qrc">
+                 <normaloff>:/icons/828.bmp</normaloff>:/icons/828.bmp</iconset>
+               </property>
+               <property name="toolButtonStyle">
+                <enum>Qt::ToolButtonTextBesideIcon</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="HS_02">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Preferred</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>51</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTreeView" name="TV_01mainTreeView"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QSplitter" name="Sv_02vertical">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <widget class="QGroupBox" name="GB_02listView">
+        <property name="title">
+         <string>listView</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QListView" name="LV_01mainListView"/>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QGroupBox" name="GB_03tableView">
+        <property name="title">
+         <string>tableView</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QTableView" name="TBV_01mainTableView"/>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="GB_04infoShow">
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <layout class="QHBoxLayout" name="Lh_03topLine">
+         <item>
+          <widget class="QLabel" name="LB_01fileName">
+           <property name="text">
+            <string>文件名：</string>
+           </property>
+           <property name="wordWrap">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="LB_02fileSize">
+           <property name="text">
+            <string>文件大小：</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="LB_03nodeType">
+           <property name="text">
+            <string>节点类型：</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="CB_02nodeIsDirectory">
+           <property name="text">
+            <string>节点是目录</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="Line" name="L_01splitterLine">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="LB_04fullPath">
+         <property name="text">
+          <string>路径名：</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextBesideIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="act01File_setRootPath"/>
+   <addaction name="separator"/>
+   <addaction name="act02System_exit"/>
+  </widget>
+  <action name="act01File_setRootPath">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/fold.bmp</normaloff>:/icons/fold.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>setRootPath</string>
+   </property>
+   <property name="toolTip">
+    <string>设置根目录</string>
+   </property>
+  </action>
+  <action name="act02System_exit">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/exit.bmp</normaloff>:/icons/exit.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="toolTip">
+    <string>退出程序</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+W</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>act02System_exit</sender>
+   <signal>triggered()</signal>
+   <receiver>TestQFileSystemModel</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>484</x>
+     <y>305</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

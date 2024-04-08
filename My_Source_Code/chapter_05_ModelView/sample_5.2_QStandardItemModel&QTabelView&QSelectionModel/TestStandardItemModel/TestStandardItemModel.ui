@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TestStandardItemModel</class>
+ <widget class="QMainWindow" name="TestStandardItemModel">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>991</width>
+    <height>521</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Source Code Pro</family>
+    <pointsize>16</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>TestStandardItemModel</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QTableView" name="TV_01standardItemModel">
+       <property name="editTriggers">
+        <set>QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed|QAbstractItemView::SelectedClicked</set>
+       </property>
+       <property name="alternatingRowColors">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPlainTextEdit" name="PTE_01displayData"/>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="font">
+    <font>
+     <family>Source Code Pro</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="toolBar_01">
+   <property name="font">
+    <font>
+     <family>Source Code Pro</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextBesideIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actFile_open"/>
+   <addaction name="actModel_displayData"/>
+   <addaction name="separator"/>
+   <addaction name="actTable_appendRow"/>
+   <addaction name="actTable_insertRow"/>
+   <addaction name="actTable_deleteRow"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_02">
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextBesideIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>true</bool>
+   </attribute>
+   <addaction name="actText_alignLeft"/>
+   <addaction name="actText_alignCenter"/>
+   <addaction name="actText_alignRight"/>
+   <addaction name="actText_fontBold"/>
+   <addaction name="separator"/>
+   <addaction name="actSystem_exit"/>
+  </widget>
+  <action name="actFile_open">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/res/open.bmp</normaloff>:/icons/res/open.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>OpenFile</string>
+   </property>
+   <property name="toolTip">
+    <string>打开文件</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actFile_saveAS">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/res/save.bmp</normaloff>:/icons/res/save.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>SaveFileAs</string>
+   </property>
+   <property name="toolTip">
+    <string>表格内容另存为文件</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="actTable_appendRow">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/res/append.bmp</normaloff>:/icons/res/append.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>AppendRow</string>
+   </property>
+   <property name="toolTip">
+    <string>添加一行</string>
+   </property>
+  </action>
+  <action name="actTable_insertRow">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/res/306.bmp</normaloff>:/icons/res/306.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>InsertRow</string>
+   </property>
+   <property name="toolTip">
+    <string>插入一行</string>
+   </property>
+  </action>
+  <action name="actTable_deleteRow">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/res/delete.bmp</normaloff>:/icons/res/delete.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>DeleteRow</string>
+   </property>
+   <property name="toolTip">
+    <string>删除一行</string>
+   </property>
+  </action>
+  <action name="actSystem_exit">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/res/exit.bmp</normaloff>:/icons/res/exit.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="toolTip">
+    <string>退出程序</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+W</string>
+   </property>
+  </action>
+  <action name="actModel_displayData">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/res/export1.bmp</normaloff>:/icons/res/export1.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>DisplayModelData</string>
+   </property>
+   <property name="toolTip">
+    <string>模型数据显示到文本框里</string>
+   </property>
+  </action>
+  <action name="actText_alignLeft">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/res/508.bmp</normaloff>:/icons/res/508.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>AlignLeft</string>
+   </property>
+   <property name="toolTip">
+    <string>文字左对齐</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+  <action name="actText_alignCenter">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/res/510.bmp</normaloff>:/icons/res/510.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>AlignCenter</string>
+   </property>
+   <property name="toolTip">
+    <string>文字居中对齐</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+M</string>
+   </property>
+  </action>
+  <action name="actText_alignRight">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/res/512.bmp</normaloff>:/icons/res/512.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>AlignRight</string>
+   </property>
+   <property name="toolTip">
+    <string>文字右对齐</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actText_fontBold">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/res/500.bmp</normaloff>:/icons/res/500.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>FontBold</string>
+   </property>
+   <property name="toolTip">
+    <string>粗体文字</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actSystem_exit</sender>
+   <signal>triggered()</signal>
+   <receiver>TestStandardItemModel</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>260</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
