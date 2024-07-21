@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TestWidgetTypicalEvent</class>
+ <widget class="QWidget" name="TestWidgetTypicalEvent">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1022</width>
+    <height>519</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Source Code Pro</family>
+    <pointsize>16</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>TestWidgetTypicalEvent</string>
+  </property>
+  <widget class="QLabel" name="label_01_PosInfo">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>50</y>
+     <width>221</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Position Info</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushB_01_movableBtn">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>240</y>
+     <width>401</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Movable Button
+Use KeyBoard 'W/A/S/D` To Move</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
